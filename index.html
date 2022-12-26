@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Result</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <div class="header-text">
+            <strong>
+                Study @ A<sup>2</sup>
+            </strong>
+            <p id="quote">Get ready to unlock your potential</p>
+            <hr>
+        </div>
+        <div>
+            <p id="info">Result declaration for the <strong>Phase 1</strong> of <strong>Exam-O-utsav</strong></p>
+            <br>
+            <form action="https://nik-09.github.io/test-series-result/" method="GET" id="studentNameAndRoll">
+                <div>
+                    <!-- <div class="input-fields">
+                        <label class="label">Name</label>
+                        <input type="text" id="studName">
+                    </div> -->
+                    <div class="input-fields">
+                        <label class="label">Roll number</label>
+                        <input type="text" id="studRoll">
+                    </div>
+                </div>
+
+                <input type="submit" value="Submit" class="search-button input-fields">
+            </form>
+        </div>
+        <div id="result">
+            <h3>
+                Name: <span id="sName"></span>
+            </h3>
+            <table>
+                <tr>
+                    <td>History</td>
+                    <td>
+                        <span id="history"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Geography</td>
+                    <td>
+                        <span id="geography"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Math</td>
+                    <td>
+                        <span id="math"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Life Science</td>
+                    <td>
+                        <span id="lifeScience"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hindi</td>
+                    <td>
+                        <span id="hindi"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Physical Science</td>
+                    <td>
+                       <span id="physicalScience"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>
+                        <span id="english"></span>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <strong>
+                Total:
+                <span id="total"></span>
+            </strong>
+        </div>
+        <div id="errorMsg">
+            Sorry no record present for this roll number.
+        </div>
+        <p>
+            Please enter only the unique 4-digit number from your roll to view the result.
+            Example: A2/<strong>1234</strong>/2023 then your unique 4-digit number will be <strong>1234</strong>.
+        </p>
+        <script src="./index.js"></script>
+    </body>
+</html>
